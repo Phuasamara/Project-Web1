@@ -24,6 +24,9 @@
     </div>
     <div>
       <a href="" class="me-4 text-reset">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
         <i class="fab fa-twitter"></i>
       </a>
       <a href="" class="me-4 text-reset">
@@ -31,12 +34,6 @@
       </a>
       <a href="" class="me-4 text-reset">
         <i class="fab fa-instagram"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="fab fa-github"></i>
       </a>
     </div>
   </section>
