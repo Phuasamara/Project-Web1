@@ -14,7 +14,7 @@
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4" >
           <div class="col col d-flex justify-content-center">
             <div class="card" style="width: 267px; align-items: center;">
-              <img src="img/background1.png" class="card-img-top" alt="c1">
+              <img src="img/baju.jpg" class="card-img-top" alt="c1">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -25,7 +25,7 @@
           </div>
           <div class="col col d-flex justify-content-center">
             <div class="card" style="width: 267px;">
-              <img src="img/background1.png" class="card-img-top" alt="c1">
+              <img src="img/celana.webp" class="card-img-top" alt="c1">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -36,7 +36,7 @@
           </div>
           <div class="col col d-flex justify-content-center">
             <div class="card" style="width: 267px;">
-              <img src="img/background1.png" class="card-img-top" alt="c1">
+              <img src="img/kalung.webp" class="card-img-top" alt="c1">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -47,7 +47,7 @@
           </div>
           <div class="col col d-flex justify-content-center">
             <div class="card" style="width: 267px;">
-              <img src="img/background1.png" class="card-img-top" alt="c1">
+              <img src="img/jepitan.jpg" class="card-img-top" alt="c1">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -62,7 +62,7 @@
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4" >
           <div class="col col d-flex justify-content-center">
             <div class="card" style="width: 267px; align-items: center;">
-              <img src="img/background1.png" class="card-img-top" alt="c1">
+              <img src="img/catokan.jpg" class="card-img-top" alt="c1">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -73,7 +73,7 @@
           </div>
           <div class="col col d-flex justify-content-center">
             <div class="card" style="width: 267px;">
-              <img src="img/background1.png" class="card-img-top" alt="c1">
+              <img src="img/kipas.jpg" class="card-img-top" alt="c1">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -84,7 +84,7 @@
           </div>
           <div class="col col d-flex justify-content-center">
             <div class="card" style="width: 267px;">
-              <img src="img/background1.png" class="card-img-top" alt="c1">
+              <img src="img/lampu.webp" class="card-img-top" alt="c1">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -95,7 +95,7 @@
           </div>
           <div class="col col d-flex justify-content-center">
             <div class="card" style="width: 267px;">
-              <img src="img/background1.png" class="card-img-top" alt="c1">
+              <img src="img/binder.jpeg" class="card-img-top" alt="c1">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>

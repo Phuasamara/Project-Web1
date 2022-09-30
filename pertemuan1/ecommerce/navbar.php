@@ -12,29 +12,29 @@
   <div style="margin: 10px;">
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#" style="font-size: 24px;">Navbar</a>
+        <a class="navbar-brand" href="#" style="font-size: 24px;">TokoKuh</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#" style="font-size: 20px;">Home</a>
+              <a class="nav-link active" aria-current="page" href="#" style="font-size: 20px;">Belanja</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" style="font-size: 20px;">Features</a>
+              <a class="nav-link" href="#" style="font-size: 20px;">Keranjang Saya</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" style="font-size: 20px;">Pricing</a>
+              <a class="nav-link" href="#" style="font-size: 20px;">Voucher</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 20px;">
-                Dropdown link
+                Profile
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#" style="font-size: 16px;">Action</a></li>
-                <li><a class="dropdown-item" href="#" style="font-size: 16px;">Another action</a></li>
-                <li><a class="dropdown-item" href="#" style="font-size: 16px;">Something else here</a></li>
+                <li><a class="dropdown-item" href="#" style="font-size: 16px;">Edit</a></li>
+                <li><a class="dropdown-item" href="#" style="font-size: 16px;">Pesanan</a></li>
+                <li><a class="dropdown-item" href="#" style="font-size: 16px;">Sign Out</a></li>
               </ul>
             </li>
           </ul>
