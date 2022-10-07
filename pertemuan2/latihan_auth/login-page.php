@@ -13,7 +13,7 @@ if(isset($_SESSION['username'])) {
     <title>Login Page</title>
 </head>
 <body>
-    <form action="index_no_db.php" method="POST">
+    <form action="index.php" method="POST">
         <label for="username">Username</label>
         <input type="text" name="username" />
         <br>

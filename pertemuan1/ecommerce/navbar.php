@@ -34,8 +34,11 @@
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#" style="font-size: 16px;">Edit</a></li>
                 <li><a class="dropdown-item" href="#" style="font-size: 16px;">Pesanan</a></li>
-                <li><a class="dropdown-item" href="#" style="font-size: 16px;">Sign Out</a></li>
+                <li><a class="dropdown-item" href="#" style="font-size: 16px;">E-money</a></li>
               </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="logout.php" style="font-size: 20px;"><button type="button" class="btn btn-outline-danger">Logout</button></a>
+            </li>
             </li>
           </ul>
         </div>
