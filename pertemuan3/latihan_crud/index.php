@@ -10,7 +10,7 @@ $result = mysqli_query($conn_db, $query);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Pgae</title>
+    <title>Home Page</title>
 </head>
 <body>
     <a href="add.php">Add New Customers</a><br><br>
