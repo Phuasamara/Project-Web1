@@ -25,11 +25,8 @@ if (isset($_POST['submit'])){
         }else{
             $result = mysqli_query($conn_db, "INSERT INTO users(username,gender,email,password,created_at) VALUES('$username','$gender','$email','$password','$created')");
 
-            echo "Users ". $username . " added successfully . <a href='login-page.php'>Login</a>";
-
             if($result){
                 header("refresh:5;url=login-page.php");
-                echo 'Success Register, You will be redirected to Login page in 5 secs. ';
             }
             }
         }
@@ -70,7 +67,7 @@ if (isset($_POST['submit'])){
             </div>
             <div class="input-field">
                 <label for="password" class="input-label">Password</label>
-                <input type="password" name="password" class="input" id="password" placeholder="Enter your full name" value="<?php if (isset($_POST['submit'])){ echo $password; } ?>">
+                <input type="password" name="password" class="input" id="password" placeholder="Enter your password" value="<?php if (isset($_POST['submit'])){ echo $password; } ?>">
             </div>
             <button type="submit" name="submit" class="btn">Register</button>
             <br><br>
