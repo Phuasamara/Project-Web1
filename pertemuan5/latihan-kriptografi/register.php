@@ -1,9 +1,9 @@
 <?php
 session_start();
 
-// if(isset($_SESSION['username'])){
-//     header('Location:admin.php');
-// }
+if(isset($_SESSION['username'])){
+    header('Location:admin.php');
+}
 
 $msg = "";
 
@@ -11,20 +11,26 @@ if (isset($_POST['submit'])){
     $username = $_POST['username'];
     $gender = $_POST['gender'];
     $email = $_POST['email'];
-    $password = $_POST['password'];
+    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+    date_default_timezone_set('Asia/Jakarta');
+    $created = date("Y-m-d H:i:s");
 
-    if (empty($username) || empty($gender) || empty($email) || empty($password)){
+    include_once("config.php");
+
+    if (empty($username) || empty($gender) || empty($email) || empty($_POST['password'])){
         $msg = "<div class='alert alert-danger'>All fields are required.</div>";
     }else {
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)){
             $msg = "<div class='alert alert-danger'>Enter a valid E-mail.</div>";
         }else{
-                $msg = "<div class='alert alert-success'>Register successfully completed.</div>";
-                $username = "";
-                $gender = "";
-                $email = "";
-                $password = "";
-                header('Location:admin.php');
+            $result = mysqli_query($conn_db, "INSERT INTO users(username,gender,email,password,created_at) VALUES('$username','$gender','$email','$password','$created')");
+
+            echo "Users ". $username . " added successfully . <a href='login-page.php'>Login</a>";
+
+            if($result){
+                header("refresh:5;url=login-page.php");
+                echo 'Success Register, You will be redirected to Login page in 5 secs. ';
+            }
             }
         }
     }
@@ -43,46 +49,10 @@ if (isset($_POST['submit'])){
 <body>
     <a href="index.php"><button type="button" class="btn btn-warning">Go To Home</button></a><br><br>
 
-    <!-- <form action="register_process.php" method="POST">
-        <table width="25%" border="0">
-            <tr>
-                <td>Username</td>
-                <td>:</td>
-                <td><input type="text" name="username"></td>
-            </tr>
-            <tr>
-                <td>Gender</td>
-                <td>:</td>
-                <td>
-                    <select name="gender" id="gender">
-                        <option value="pria">Pria</option>
-                        <option value="wanita">Wanita</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td>E-Mail</td>
-                <td>:</td>
-                <td><input type="email" name="email"></td>
-            </tr>
-            <tr>
-                <td>Password</td>
-                <td>:</td>
-                <td><input type="password" name="password"></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td><input type="submit" name="submit" value="Register"></td>
-            </tr>
-        </table>
-    </form> -->
-    <!-- <br><br>
-    Sudah memiliki akun? <a href="login-page.php">Login</a> -->
     <div class="wrapper">
         <h2 class ="tittle">REGISTER</h2>
         <?php echo $msg; ?>
-        <form action="register_process.php" method="POST" class="form">
+        <form action="register.php" method="POST" class="form">
             <div class="input-field">
                 <label for="username" class="input-label">Username</label>
                 <input type="text" name="username" class="input" id="username" placeholder="Enter your username" value="<?php if (isset($_POST['submit'])){ echo $username; } ?>">
