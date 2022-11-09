@@ -28,7 +28,7 @@ if(isset($_SESSION['username'])) {
             <div class="col-md-7 col-lg-6 d-flex align-items-center">
               <div class="card-body p-4 p-lg-5 text-black">
 
-                <form action="index.php" method="POST">
+                <form action="register_process.php" method="POST">
 
                   <div class="d-flex align-items-center mb-3 pb-1">
                     <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
@@ -37,21 +37,34 @@ if(isset($_SESSION['username'])) {
 
                   <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign into your account</h5>
 
-                  <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" name="username" placeholder="name@example.com">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" name="username" placeholder="Enter your username">
                     <label for="floatingInput">Username</label>
                 </div>
 
+                <div class="form-floating mb-3">
+                    <select class="form-select" aria-label="Default select example" name="gender" id="gender">
+                        <option selected>Pria</option>
+                        <option value="pria">Pria</option>
+                        <option value="wanita">Wanita</option>
+                    </select>
+                    <label for="floatingInput">Gender</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" name="email" placeholder="Enter your e-mail">
+                    <label for="floatingInput">E-mail</label>
+                </div>
+
                 <div class="form-floating">
-                    <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="Password">
+                    <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="Enter your password">
                     <label for="floatingPassword">Password</label>
                 </div>
 
                 <br>
                   <div class="pt-1 mb-4">
-                    <button class="btn btn-dark btn-lg btn-block" type="submit" name="submit">Login</button>
+                    <button class="btn btn-dark btn-lg btn-block" type="submit" name="submit">Register</button>
                   </div>
-                  Belum memiliki akun? <a href="register.php">Login</a><br><br>
                   <a href="#!" class="small text-muted">Terms of use.</a>
                   <a href="#!" class="small text-muted">Privacy policy</a>
                 </form>
